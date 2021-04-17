@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+	<body bgcolor="#ffb3ff">
+		<form method="POST", action="{{url_for('man')}}">
+			<center>
+
+			<table cellpadding="4" width="35%" bgcolor="#b3ffff" cellspacing="6">
+				<tr>
+					<td colspan="2">
+						<center><font size="6"><b>EARTHQUICK DAMAGE PREDICTION</b></font></center>
+					</td>
+				</tr>
+
+				<tr>
+					<td>AGE:</td>
+					<td><input type="text" name="age", placeholder="age" required></td>
+				</tr>
+				<tr>
+					<td>COUNT FLOOR:</td>
+					<td><select name="count_floors_pre_eq">
+						<option value="-1" selected>select count floor pre equation</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="9">9</option>
+
+					</select></td>
+				</tr>
+				<tr>
+					<td>AREA PERCENTAGE:</td>
+					<td><input type="text" name="area_percentage", placeholder="Enter area percentage" required></td>
+				</tr>
+				<tr>
+					<td>HEIGHT PERCENTAGE:</td>
+					<td><input type="text" name="height_percentage", placeholder="Enter height percentage" required></td>
+				</tr>
+				<tr>
+					<td>LAND SURFACE CONDITION:</td>
+					<td><select name="land_surface_condition">
+						<option value="-1" selected>select land surface condition</option>
+						<option value="0">n</option>
+						<option value="1">o</option>
+						<option value="2">t</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td>FOUNDATION TYPE:</td>
+					<td><select name="foundation_type">
+						<option value="-1" selected>select foundation type</option>
+						<option value="0">h</option>
+						<option value="1">i</option>
+						<option value="2">r</option>
+						<option value="3">u</option>
+						<option value="4">w</option></select></td>
+
+
+				</tr>
+				<tr>
+					<td>ROOF TYPE:</td>
+					<td><select name="roof_type">
+						<option value="-1" selected>select roof type</option>
+						<option value="0">n</option>
+						<option value="1">q</option>
+						<option value="2">x</option></select></td>
+				</tr>
+				<tr>
+					<td>SECONDARY USE HOSTEL:</td>
+					<td><select name="has_secondary_use_hotel">
+						<option value="-1" selected>select...</option>
+						<option value="0">0</option>
+						<option value="1">1</option></select></td>
+
+				</tr>
+				<tr>
+					<td>SECONDARY USE RENTAL:</td>
+					<td><select name="has_secondary_use_rental">
+						<option value="-1" selected>select...</option>
+						<option value="0">0</option>
+						<option value="1">1</option></select></td>
+				</tr>
+
+				<tr>
+				<td><center><input type="submit", value="PREDICT!!!"></center></td>
+				</tr>
+		</table></center>
+
+
+		</form>
+		
+	</body>
+</html>
